@@ -325,3 +325,45 @@
 //     }
 //   }
 // }
+
+// Coding Exercise 3
+// 1
+// let i = 5;
+// while (i < 11) {
+//   console.log(i);
+//   i++;
+// }
+
+// // 2
+// for (let j = 20; j > 9; j--) {
+//   if (j === 13) {
+//     break;
+//   }
+//   console.log(j);
+// }
+
+// // 3
+// for (let k = 1; k < 11; k++) {
+//   if (k % 2 !== 0) {
+//     continue;
+//   }
+//   console.log(k);
+// }
+
+// // 4
+// let l = 1;
+// while (l < 16) {
+//   l++;
+//   if (l % 2 === 0) {
+//     continue;
+//   } else {
+//     console.log(l);
+//   }
+// }
+
+// // 5
+// const arrayOfNumbers = [];
+
+// for (let o = 5; o < 11; o++) {
+//   arrayOfNumbers.push(o);
+// }
