@@ -257,3 +257,33 @@
 // } else {
 //   console.log("Пішов голодний");
 // }
+
+// 22 Цикли
+
+// let num = 0;
+
+// // while
+// while (num <= 10) {
+//   console.log(num);
+//   num++;
+// }
+
+// // do... while
+// do {
+//   console.log(num);
+//   num++;
+// } while (num <= 20);
+
+// // for
+// for (let i = 1; i <= 15; i++) {
+//   console.log(num);
+//   num++;
+// }
+
+// for (let l = 1; l <= 10; l++) {
+//   if (l === 6) {
+//     break; // цикл зупиняєтьс коли умова вірна
+//     continue; // пропускає непотрібну умову і рухається далі
+//   }
+//   console.log(l);
+// }
