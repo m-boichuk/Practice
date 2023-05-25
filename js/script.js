@@ -1,5 +1,131 @@
 "use strict";
 
+// 11 Типи даних
+
+// Об'єкт
+// структура зберігання даних в парному форматі ключ і значення
+// const human = {
+//   name: "Mykola",
+//   sex: "male",
+//   age: 26,
+//   isMarried: false,
+// };
+
+// human.degree = "master's degree";
+
+// console.log(human.name);
+// console.log(human["age"]); // надійніше використовувати квадратні дужки
+// console.log(human);
+
+// // Масив
+// let arr = ["string", 9, true, {}, []]; // масив послідовність об'єктів по порядку
+// console.log(arr[2]);
+
+// 12 Завдання
+// let storeName = "Bodyshop";
+// let storeDescription = {
+//   budget: 10000,
+//   employees: ["Anna", "Hannah", "Arma"],
+//   products: { notebook: 30, pen: 5 },
+//   open: true,
+// };
+
+// 13 Просте спілкування з користувачем
+
+// модальне вікно
+// alert("Hello"); // сповіщення попередження
+
+// const result = confirm("Are you here?");
+// console.log(result);
+
+// const answer = prompt("Where are you?", "I'm here");
+// console.log(answer);
+// console.log(typeof answer); // рядок
+
+// const answers = [];
+
+// answers[0] = prompt("Ваше прізвище");
+// answers[1] = prompt("Ваше ім'я");
+// answers[2] = prompt("Ваш вік");
+
+// document.write(answers);
+
+// console.log(typeof answers);
+
+// 14 Інтерполяція (зміна значення змінної врядку)
+
+// const category = "toys";
+// console.log(`http://someurl.com/${category}/1`);
+
+// const user = "John";
+// alert(`Hi, ${user}`);
+
+// 15 Оператори
+
+// console.log("arr" + " - object"); // рядок
+// console.log(5 + +"5"); // число тому що перед рядком стоїть унарний плюс
+// console.log(5 + "5"); // рядок
+
+// let incr = 10;
+// let decr = 10;
+
+// // ++ інкремент
+// // -- декрамент
+
+// // префіксний
+// ++incr;
+// --decr;
+
+// console.log(incr);
+// console.log(decr);
+
+// console.log(++incr);
+// console.log(--decr);
+
+// // постфіксний
+// incr++;
+// decr--;
+
+// console.log(incr);
+// console.log(decr);
+
+// console.log(incr++); // в постфіксній формі спочатку в консолі повертає старе значення
+// console.log(decr--);
+
+// console.log(5 % 2); // 1  показує остачу
+
+// // = для присвоєння
+// let qwerty = "string";
+// console.log(typeof qwerty);
+
+// // == для порівеяня
+// console.log(2 + 3 == 5); // true
+// console.log(2 + 3 == "5"); // true хоча "5" це рядок
+
+// // для строгого порівняння
+// console.log(2 + 3 === "5"); // false
+
+// // Логічні оператор
+
+// // &&(амперсанд) (Shift+7) - і ,
+// const isChecked = true;
+// const isOpen = true;
+// const isClose = false;
+
+// console.log(isChecked && isOpen);
+// console.log(isClose && isOpen);
+
+// // || (Shift+Vertical bar) - або
+// console.log(isOpen || isClose);
+
+// // ! заперечення
+// console.log(!isOpen || isClose);
+
+// // порядок виконання
+// console.log(2 + 2 * 2);
+// console.log(2 + 2 * 2 === 8);
+
+// 19 Практика
 /* Задание на урок:
 
 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
@@ -74,4 +200,60 @@
 //   default:
 //     console.log("Не знаю");
 //     break;
+// }
+
+// 21 Логічні оператори
+
+// завжди false
+// null;
+// NaN;
+// 0;
+// "", '',``; (порожній рядок)
+// undefined;
+
+// const hamburger = 3;
+// const fries = 2;
+// const cola = 1;
+// const cebab = 0;
+// const cheeseburger = 0;
+// const mcflurry = -1;
+// const nuggets = 3;
+
+// && і
+// if (hamburger === 3 && fries && cola) {
+//   console.log("Наївся");
+// } else {
+//   console.log("Пішов голодний");
+// }
+
+// console.log(hamburger && fries && cola); // 1 && повертає останнє  true значення
+
+// console.log(fries && cola && cebab); // 0 && повертає перше  false значення
+
+// || або
+
+// if (hamburger === 3 || fries || cola) {
+//   console.log("Посиділи");
+// } else {
+//   console.log("Пішли");
+// }
+
+// console.log(hamburger || fries || cola); // 3 || повертає перше правильне значення
+// console.log(cebab || cheeseburger || mcflurry); // -1 || повертає останнє неправильне значеня
+
+// && зупинається на брехні, || зупинається на правді
+
+// let matthewReport,
+//   markReport,
+//   lukeReport,
+//   johnReport = "done";
+
+// console.log(matthewReport || markReport || lukeReport || johnReport);
+
+// // комбіновані
+
+// if ((hamburger === 3 && cola === 2) || (fries === 2 && nuggets)) {
+//   console.log("Наївся");
+// } else {
+//   console.log("Пішов голодний");
 // }
