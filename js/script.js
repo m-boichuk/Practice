@@ -287,3 +287,41 @@
 //   }
 //   console.log(l);
 // }
+
+// Цикл в циклі і мітки
+
+// Вкладені цикли
+// for  (let i = 0; i < 3; i++) {
+//   // і це лічильник , ітератор. Виконання тіла циклу це ітерація
+//   console.log(i);
+//   for (j = 0; j < 3; j++) {
+//     // у вкладеному циклі використовують ітератор j
+//     console.log(j);
+//   }
+// }
+
+// let result = "";
+// const length = 7;
+
+// for (let i = 1; i < length; i++) {
+//   for (let j = 0; j < i; j++) {
+//     result += "*";
+//   }
+
+//   result += "\n";
+// }
+
+// console.log(result);
+
+// // Мітки
+// first: for (i = 0; i < 3; i++) {
+//   // first - мітка
+//   console.log(i);
+//   for (j = 0; j < 3; j++) {
+//     console.log(j);
+//     for (k = 0; k < 3; k++) {
+//       if (k === 2) break first; // уиова зупинити мітку
+//       console.log(k);
+//     }
+//   }
+// }
