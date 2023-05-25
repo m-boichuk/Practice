@@ -450,3 +450,51 @@
 // }
 
 // console.log(personalMovieDB);
+
+// 25 Функції, стрілкові функції
+
+// let num = 20;
+
+// // деклеративні функції працює ще до того як була оголошена
+// function showFirstMessage(text) {
+//   // ім'я функції має бути дієсловом із припискою над чим виконується дія
+//   console.log(text);
+//   let num = 15;
+//   console.log(num); //  функція саочатку шукає в собі , якщо немає то піднімається на рівень вище і тд
+// }
+
+// showFirstMessage("Пррррррррривіт");
+// console.log(num);
+
+// function calc(a, b) {
+//   return a + b; // після виконання return функція зупиняється
+//   console.log("Text"); // unreachable code недосяжний код , тому що після ретурн функція зупиняється
+// }
+
+// console.log(calc(4, 5));
+
+// function ret() {
+//   let num = 50;
+//   return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// // Функціональний вираз
+// // створюється тільки тоді коли до неї доходить потік коду, можна використати тільки після оголошення
+// const logger = function () {
+//   console.log("Пррррррррривіт");
+// };
+
+// logger();
+
+// Стрілкова функція
+
+// не має свого контексту
+// const calcut = (a, b) => {
+//   let result = a * b;
+//   console.log(result);
+// };
+
+// calcut(6, 8);
