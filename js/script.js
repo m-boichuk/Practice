@@ -23,22 +23,55 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
+// const personalMovieDB = {
+//   count: numberOfFilms,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
 
-const a = prompt("Один из последних просмотренных фильмов", "");
-const b = +prompt("На сколько оцените его?", "");
-const c = prompt("Один из последних просмотренных фильмов", "");
-const d = +prompt("На сколько оцените его?", "");
+// const a = prompt("Один из последних просмотренных фильмов", "");
+// const b = +prompt("На сколько оцените его?", "");
+// const c = prompt("Один из последних просмотренных фильмов", "");
+// const d = +prompt("На сколько оцените его?", "");
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
+
+// 20 Умови
+
+// let number = 50;
+
+// if (number < 50) {
+//   console.log("замало");
+// } else if (number > 50) {
+//   console.log("Забагато");
+// } else if (number == 50) {
+//   console.log("Правильно");
+// }
+
+// // тернарний вираз має 3 аргументи
+// number = 50 ? console.log("Правильно") : console.log("Неправильно");
+// // Умова ? Умова вірна : умова невірнаж
+
+// // Swiych
+
+// switch (number) {
+//   case 49:
+//     console.log("Неправильно");
+//     break;
+//   case 51:
+//     console.log("Неправильно");
+//     break;
+//   case 50:
+//     console.log("Правильно");
+//     break;
+//   default:
+//     console.log("Не знаю");
+//     break;
+// }
