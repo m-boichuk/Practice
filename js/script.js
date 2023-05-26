@@ -510,3 +510,34 @@
 
 // console.log(convert(100, usdCurr));
 // console.log(convert(100, euroCurr));
+
+// 27 Return
+// const usdCurr = 36;
+// const discount = 0.9;
+
+// function convert(amount, curr) {
+//   return amount * curr;
+// }
+
+// function promotionOne(result) {
+//   console.log(result * 1);
+// }
+
+// promotionOne(convert(400, usdCurr));
+
+// const resultTwo = convert(500, usdCurr); // проміжна змінна
+
+// promotionOne(resultTwo);
+
+// function test() {
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//     if (i === 3) return; // якщо return не налаштований то функція повертає undefined
+//   }
+//   console.log("Кінець");
+// }
+
+// test();
+
+// функція без return повертає undefined
+// не робити новий рядок після return
