@@ -586,3 +586,48 @@
 // }
 
 // getMathResult(10, 5);
+
+// Методи і властивості чмсел і рядків
+
+// Методи це допоміжні функції ()
+// Властивості це допоміжні значення .
+
+// function suma(a, b) {
+//   return a + b;
+// }
+
+// // Рядок
+// const str = "Some simple text";
+
+// // Властивості
+// console.log(str.length);
+
+// // Методи
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+
+// console.log(str.indexOf("S")); // 0 між великими і малими літерами є різниця
+// console.log(str.indexOf("s")); // 5
+// console.log(str.indexOf("m")); // 2 якщо зустрічається кілька разів то відображає перший
+// console.log(str.indexOf("i")); // 6
+// console.log(str.indexOf("q")); // -1 якщоне зустрічається
+
+// console.log(str.slice(5, 11)); // перше число враховується а останнє ні
+// console.log(str.slice(5)); // до кінця
+// console.log(str.slice(-5, -1)); // може бути від'ємним
+
+// console.log(str.substring(5, 11));
+
+// console.log(str.substr(5, 4));
+
+// // Число
+// const num = 3.14;
+
+// // Методи
+
+// console.log(Math.round(num));
+
+// const testsize = "12.25px";
+// console.log(parseInt(testsize)); // перетворює на ціле число
+
+// console.log(parseFloat(testsize)); // зберігає дробову частину
