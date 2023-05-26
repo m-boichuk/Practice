@@ -541,3 +541,48 @@
 
 // функція без return повертає undefined
 // не робити новий рядок після return
+
+// Coding Exercise 6
+
+// 1
+// function hello(name) {
+//   const result = `Hello, ${name}`;
+//   console.log(result);
+//   return result;
+// }
+
+// hello("Vi");
+
+// 2
+// function returnNeighboringNumbers(num) {
+//   let result = [num - 1, num, num + 1];
+//   console.log(result);
+//   return result;
+// }
+
+// returnNeighboringNumbers(6);
+
+// 3
+
+// function getMathResult(num, times) {
+//   if (typeof times !== "number" || times <= 0) {
+//     return num;
+//   }
+
+//   let str = "";
+
+//   for (let i = 1; i <= times; i++) {
+//     if (i === times) {
+//       str += `${num * i}`;
+//       // Тут без черточек в конце
+//     } else {
+//       str += `${num * i}---`;
+//       // Это тоже самое, что и
+//       // str = str + num * i + "---"
+//     }
+//   }
+
+//   return str;
+// }
+
+// getMathResult(10, 5);
