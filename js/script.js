@@ -752,3 +752,40 @@ P.S. Функции вызывать не обязательно*/
 //   return result;
 // }
 // getCoupeNumber(6);
+
+// `Coding Exercise 8`
+
+// 1
+// function getTimeFromMinutes(minutes) {
+//   let hours = Math.floor(minutes / 60);
+//   let minut = minutes % 60;
+//   let result = `Зараз ${hours} година і ${minut} хвилин`;
+//   console.log(result);
+// }
+
+// getTimeFromMinutes(500);
+
+// function findMaxNumber(a, b) {
+//   console.log(findMaxNumber.length);
+// }
+
+// findMaxNumber(1, 2, 3, 4);
+
+// // 2
+// function findMaxNumber(a, b, c, d) {
+//   // Самое простое - это использовать Math.max :)
+//   // А оптимизировать такую проверку мы научимся совсем скоро
+//   if (
+//     typeof a !== "number" ||
+//     typeof b !== "number" ||
+//     typeof c !== "number" ||
+//     typeof d !== "number"
+//   ) {
+//     return 0;
+//   } else {
+//     return Math.max(a, b, c, d);
+//   }
+// }
+
+// findMaxNumber(1, 5, 6.6, 10.5);
+// findMaxNumber(1, 5, "6", "10");
