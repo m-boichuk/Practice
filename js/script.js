@@ -818,3 +818,34 @@ P.S. Функции вызывать не обязательно*/
 // }
 
 // fib(5);
+
+// 31 Callback функції
+
+// function first() {
+//   setTimeout(() => {
+//     console.log("first");
+//   }, 500);
+// }
+
+// function second() {
+//   console.log("second");
+// }
+
+// first();
+// second();
+
+// // Call-back функція це така функція що має бути виконана коли інша вже завершилась
+// function lernJІ(lang, callback) {
+//   console.log(`Я учу ${lang}`);
+//   callback();
+// }
+
+// function order() {
+//   console.log(" Вчися краще");
+// }
+
+// lernJІ("javascript", function () {
+//   console.log(" Ну учи далі");
+// });
+
+// lernJІ("JavaScript", order);
