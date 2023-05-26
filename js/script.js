@@ -657,16 +657,6 @@ P.S. Функции вызывать не обязательно*/
 //   }
 // }
 
-// let numberOfFilms;
-
-// function start() {
-//   numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-
-//   while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-//     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-//   }
-// }
-
 // start();
 
 // const personalMovieDB = {
@@ -687,7 +677,7 @@ P.S. Функции вызывать не обязательно*/
 //       console.log("done");
 //     } else {
 //       console.log("error");
-//       i--;
+//       i--; // повертає цикл назад
 //     }
 //   }
 // }
@@ -708,14 +698,18 @@ P.S. Функции вызывать не обязательно*/
 
 // detectPersonalLevel();
 
-// function showMyDB(hidden) {
-//   if (!hidden) {
-//     console.log(personalMovieDB);
-//   }
-// }
+// console.log(personalMovieDB);
 
-// showMyDB(personalMovieDB.privat);
+// // 2
+// // function showMyDB() {
+// //   if (!hidden) {
+// //     console.log(personalMovieDB);
+// //   }
+// // }
 
+// // showMyDB(personalMovieDB.privat);
+
+// // 3
 // function writeYourGenres() {
 //   for (let i = 1; i <= 3; i++) {
 //     personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
@@ -723,3 +717,38 @@ P.S. Функции вызывать не обязательно*/
 // }
 
 // writeYourGenres();
+
+// Coding Exercise 7
+
+// 1
+// function calculateVolumeAndArea(num) {
+//   if (num <= 0 || typeof num === "string" || !Number.isInteger(num)) {
+//     let resultat = "При вычислении произошла ошибка";
+//     console.log(resultat);
+//     return resultat;
+//   } else {
+//     let volume = num * num * num;
+//     let area = num * num * 6;
+//     let result = `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+//     console.log(result);
+//     return result;
+//   }
+// }
+
+// calculateVolumeAndArea(1.5);
+// // тут я використав забагато прохідних змінних,
+
+// // 2
+
+// function getCoupeNumber(number) {
+//   if (number < 0 || typeof number === "string" || !Number.isInteger(number)) {
+//     return "Ошибка. Проверьте правильность введенного номера места";
+//   }
+//   if (number === 0 || number > 36) {
+//     return "Таких мест в вагоне не существует";
+//   }
+//   let result = Math.ceil(number / 4);
+//   console.log(result);
+//   return result;
+// }
+// getCoupeNumber(6);
