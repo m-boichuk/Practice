@@ -498,3 +498,15 @@
 // };
 
 // calcut(6, 8);
+
+// 26 Аргументи функцій
+
+// const usdCurr = 28;
+// const euroCurr = 32;
+
+// function convert(amount, curr) {
+//   return amount * curr;
+// }
+
+// console.log(convert(100, usdCurr));
+// console.log(convert(100, euroCurr));
