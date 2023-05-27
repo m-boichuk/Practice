@@ -849,3 +849,49 @@ P.S. Функции вызывать не обязательно*/
 // });
 
 // lernJІ("JavaScript", order);
+
+// 32 Об'єкти, деструктуризація об'єктів
+
+// const options = {
+//   name: "test",
+//   width: 1920,
+//   height: 1080,
+//   colors: { border: "black", background: "grey" },
+//   makeTest: function () {
+//     console.log("Test"); // власний метод в об'єкті
+//   },
+// };
+
+// options.makeTest();
+
+// Дкструктиризація витягнення властивостей з об'єкта в окрему змінну
+// const { border, background } = options.colors;
+// console.log(border);
+
+// console.log(Object.keys(options).length);
+
+// console.log(options.name);
+// console.log(options.colors);
+
+// delete options.name;
+
+// console.log(options);
+
+// Перебір Об'єкта for in
+// for (let key in options) {
+//   console.log(`Властивість ${key} має значення ${options[key]}`);
+// }
+
+// let counter = 0;
+// for (let key in options) {
+//   if (typeof options[key] === "object") {
+//     for (let i in options[key]) {
+//       console.log(`Властивість ${i} має значення ${options[key][i]}`);
+//       counter++;
+//     }
+//   } else {
+//     console.log(`Властивість ${key} має значення ${options[key]}`);
+//     counter++;
+//   }
+// }
+// console.log(counter);
