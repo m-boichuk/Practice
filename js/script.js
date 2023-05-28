@@ -125,50 +125,6 @@
 // console.log(2 + 2 * 2);
 // console.log(2 + 2 * 2 === 8);
 
-// 19 Практика Частина 1
-/* Задание на урок:
-
-1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
-'Сколько фильмов вы уже посмотрели?'
-
-2) Создать объект personalMovieDB и в него поместить такие свойства:
-    - count - сюда передается ответ на первый вопрос
-    - movies - в это свойство поместить пустой объект
-    - actors - тоже поместить пустой объект
-    - genres - сюда поместить пустой массив
-    - privat - в это свойство поместить boolean(логическое) значение false
-
-3) Задайте пользователю по два раза вопросы:
-    - 'Один из последних просмотренных фильмов?'
-    - 'На сколько оцените его?'
-Ответы стоит поместить в отдельные переменные
-Записать ответы в объект movies в формате: 
-    movies: {
-        'logan': '8.1'
-    }
-
-Проверить, чтобы все работало без ошибок в консоли */
-
-// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-
-// const personalMovieDB = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: false,
-// };
-
-// const a = prompt("Один из последних просмотренных фильмов", "");
-// const b = +prompt("На сколько оцените его?", "");
-// const c = prompt("Один из последних просмотренных фильмов", "");
-// const d = +prompt("На сколько оцените его?", "");
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
-// console.log(personalMovieDB);
-
 // 20 Умови
 
 // let number = 50;
@@ -325,131 +281,6 @@
 //     }
 //   }
 // }
-
-// Coding Exercise 3
-// 1
-// let i = 5;
-// while (i < 11) {
-//   console.log(i);
-//   i++;
-// }
-
-// // 2
-// for (let j = 20; j > 9; j--) {
-//   if (j === 13) {
-//     break;
-//   }
-//   console.log(j);
-// }
-
-// // 3
-// for (let k = 1; k < 11; k++) {
-//   if (k % 2 !== 0) {
-//     continue;
-//   }
-//   console.log(k);
-// }
-
-// // 4
-// let l = 1;
-// while (l < 16) {
-//   l++;
-//   if (l % 2 === 0) {
-//     continue;
-//   } else {
-//     console.log(l);
-//   }
-// }
-
-// // 5
-// const arrayOfNumbers = [];
-
-// for (let o = 5; o < 11; o++) {
-//   arrayOfNumbers.push(o);
-// }
-
-// Coding Exercise 4
-
-// 1
-// const arr = [3, 5, 8, 16, 20, 23, 50];
-// const result = [];
-
-// for (let i = 0; i < arr.length; i++) {
-//   result[i] = arr[i];
-// }
-
-// 2
-// const data = [5, 10, "Shopping", 20, "Homework"];
-// for (let i = 0; i < data.length; i++) {
-//   if (typeof data[i] === "number") {
-//     data[i] = data[i] * 2;
-//   } else if (typeof data[i] === "string") {
-//     data[i] = `${data[i]} - done`;
-//   }
-// }
-
-// console.log(data);
-// return data;
-
-// 3
-// const data = [5, 10, "Shopping", 20, "Homework"];
-// const result = [];
-// for (let i = 1; i <= data.length; i++) {
-//   result[i - 1] = data[data.length - i];
-// }
-
-// console.log(result);
-// return result;
-
-// 24 Практика Частина 2
-/* Задание на урок:
-
-1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
-
-2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
-отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит - 
-возвращаем пользователя к вопросам опять
-
-3) При помощи условий проверить  personalMovieDB.count, и если он меньше 10 - вывести сообщение
-"Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше - 
-"Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
-
-4) Потренироваться и переписать цикл еще двумя способами*/
-
-// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-
-// const personalMovieDB = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: false,
-// };
-
-// for (let i = 0; i < 2; i++) {
-//   const a = prompt("Один из последних просмотренных фильмов?", ""),
-//     b = prompt("На сколько оцените его?", "");
-
-//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-//     personalMovieDB.movies[a] = b;
-//     console.log("done");
-//   } else {
-//     console.log("error");
-//     i--; // повертає цикл назад
-//   }
-// }
-
-// if (personalMovieDB.count < 10) {
-//   console.log("Просмотрено довольно мало фильмов");
-// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-//   console.log("Вы классический зритель");
-// } else if (personalMovieDB.count >= 30) {
-//   console.log("Вы киноман");
-// } else {
-//   console.log("Произошла ошибка");
-// }
-
-// console.log(personalMovieDB);
 
 // 25 Функції, стрілкові функції
 
@@ -632,193 +463,6 @@
 
 // console.log(parseFloat(testsize)); // зберігає дробову частину
 
-// 29 Практика Частина 3
-
-/* Задание на урок:
-
-1) Первую часть задания повторить по уроку
-
-2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
-false - выводит в консоль главный объект программы
-
-3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
-"Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
-genres
-
-P.S. Функции вызывать не обязательно*/
-
-// let numberOfFilms;
-
-// function start() {
-//   numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-
-//   while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-//     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-//   }
-// }
-
-// start();
-
-// const personalMovieDB = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: false,
-// };
-
-// function rememberMyFilms() {
-//   for (let i = 0; i < 2; i++) {
-//     const a = prompt("Один из последних просмотренных фильмов?", ""),
-//       b = prompt("На сколько оцените его?", "");
-
-//     if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-//       personalMovieDB.movies[a] = b;
-//       console.log("done");
-//     } else {
-//       console.log("error");
-//       i--; // повертає цикл назад
-//     }
-//   }
-// }
-
-// rememberMyFilms();
-
-// function detectPersonalLevel() {
-//   if (personalMovieDB.count < 10) {
-//     console.log("Просмотрено довольно мало фильмов");
-//   } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-//     console.log("Вы классический зритель");
-//   } else if (personalMovieDB.count >= 30) {
-//     console.log("Вы киноман");
-//   } else {
-//     console.log("Произошла ошибка");
-//   }
-// }
-
-// detectPersonalLevel();
-
-// console.log(personalMovieDB);
-
-// // 2
-// // function showMyDB() {
-// //   if (!hidden) {
-// //     console.log(personalMovieDB);
-// //   }
-// // }
-
-// // showMyDB(personalMovieDB.privat);
-
-// // 3
-// function writeYourGenres() {
-//   for (let i = 1; i <= 3; i++) {
-//     personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
-//   }
-// }
-
-// writeYourGenres();
-
-// Coding Exercise 7
-
-// 1
-// function calculateVolumeAndArea(num) {
-//   if (num <= 0 || typeof num === "string" || !Number.isInteger(num)) {
-//     let resultat = "При вычислении произошла ошибка";
-//     console.log(resultat);
-//     return resultat;
-//   } else {
-//     let volume = num * num * num;
-//     let area = num * num * 6;
-//     let result = `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
-//     console.log(result);
-//     return result;
-//   }
-// }
-
-// calculateVolumeAndArea(1.5);
-// // тут я використав забагато прохідних змінних,
-
-// // 2
-
-// function getCoupeNumber(number) {
-//   if (number < 0 || typeof number === "string" || !Number.isInteger(number)) {
-//     return "Ошибка. Проверьте правильность введенного номера места";
-//   }
-//   if (number === 0 || number > 36) {
-//     return "Таких мест в вагоне не существует";
-//   }
-//   let result = Math.ceil(number / 4);
-//   console.log(result);
-//   return result;
-// }
-// getCoupeNumber(6);
-
-// `Coding Exercise 8`
-
-// 1
-// function getTimeFromMinutes(minutes) {
-//   let hours = Math.floor(minutes / 60);
-//   let minut = minutes % 60;
-//   let result = `Зараз ${hours} година і ${minut} хвилин`;
-//   console.log(result);
-// }
-
-// getTimeFromMinutes(500);
-
-// function findMaxNumber(a, b) {
-//   console.log(findMaxNumber.length);
-// }
-
-// findMaxNumber(1, 2, 3, 4);
-
-// // 2
-// function findMaxNumber(a, b, c, d) {
-//   // Самое простое - это использовать Math.max :)
-//   // А оптимизировать такую проверку мы научимся совсем скоро
-//   if (
-//     typeof a !== "number" ||
-//     typeof b !== "number" ||
-//     typeof c !== "number" ||
-//     typeof d !== "number"
-//   ) {
-//     return 0;
-//   } else {
-//     return Math.max(a, b, c, d);
-//   }
-// }
-
-// findMaxNumber(1, 5, 6.6, 10.5);
-// findMaxNumber(1, 5, "6", "10");
-
-// Coding Exercise 9 Послідовніст Фібоначі
-
-// function fib(num) {
-//   if (typeof num !== "number" || num <= 0 || !Number.isInteger(num)) {
-//     return "";
-//   }
-
-//   let result = "";
-//   let first = 0;
-//   let second = 1;
-
-//   for (let i = 0; i < num; i++) {
-//     if (i + 1 === num) {
-//       result += `${first}`;
-//       // Без пробела в конце
-//     } else {
-//       result += `${first} `;
-//     }
-
-//     let third = first + second;
-//     first = second;
-//     second = third;
-//   }
-
-//   return result;
-// }
-
-// fib(5);
-
 // 31 Callback функції
 
 // function first() {
@@ -895,3 +539,57 @@ P.S. Функции вызывать не обязательно*/
 //   }
 // }
 // console.log(counter);
+
+// 33 Масиви і псевдомасиви
+
+// const arr = [0, 1, 1, 2, 3, 5, 8, 13];
+// console.log(arr.sort());
+// console.log(arr.sort(compareNum));
+
+// function compareNum(a, b) {
+//   return a - b;
+// }
+// Вдастивість
+
+// кількість елементів у масиві = індекс останнього + 1
+// arr[99] = 99;
+// console.log(arr.length);
+// console.log(arr);
+
+// Методи
+
+// const str = prompt("", "", "");
+// const products = str.split(", "); // робить масив
+// console.log(products);
+// products.sort(); // сортування
+// console.log(products.join(", ")); // робить рядок
+
+// кінець масива
+// arr.pop(); // видалити
+// arr.push(21); // добавити
+
+// // початок масиву використовують рідко щоб не зміщувати index
+// // arr.shift(); // видалити
+// arr.unshift(100); //  дадати елемент
+
+// console.log(arr);
+
+// методи перебору
+
+// перебір масива за допомогою циклу
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// перебір масива за допомогою for of можна використовувати break і continue
+// for (let value of arr) {
+//   console.log(value);
+// }
+
+// перебір масива за допомогою forEach() найчастіше використовується
+// 3 аргументи 1) елемент який перебираєм  2) номер по порядку,   3) посилання на масив що перебираєм
+// arr.forEach(function (item, i, arr) {
+//   console.log(`${i}: ${item} всередині масиву  ${arr}`);
+// });
+
+// Псевдомасив це об'єк структура якого співпадає із структурою масиву, але в нього не буде методів
