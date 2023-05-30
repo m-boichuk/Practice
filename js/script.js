@@ -702,3 +702,24 @@
 
 // console.log(q);
 // console.log(qCopy);
+
+// 36 ООП Прототипно-орієнтоване наслідування
+
+// const soldier = {
+//   health: 400,
+//   armor: 150,
+//   greetings: function sayHello() {
+//     console.log("Hello");
+//   },
+// };
+
+// const john = {
+//   health: 100,
+// };
+
+// john.__proto__ = soldier; // цей метод застарілий
+// Object.setPrototypeOf(john, soldier); // налаштувати прототип для вже створеного обєкту
+
+// const john = Object.create(soldier); // створюєм новий об'єкт що прототипно успадковує властивості
+// console.log(john.armor);
+// john.greetings();
