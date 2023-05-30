@@ -191,3 +191,124 @@
 // }
 
 // fib(5);
+
+// Coding Exercise 7 Робота з об'єктами
+
+// const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//     languages: ["ru", "eng"],
+//     programmingLangs: {
+//       js: "20%",
+//       php: "10%",
+//     },
+//     exp: "1 month",
+//   },
+//   // 3
+//   showAgeAndLangs: function (plan) {
+//     const { age } = plan;
+//     const { languages } = plan.skills;
+//     let str = `Мне ${age} и я владею языками: `;
+
+//     languages.forEach(function (lang) {
+//       str += `${lang.toUpperCase()} `;
+//     });
+
+//     return str;
+//   },
+// };
+
+// // 1
+// function showExperience(plan) {
+//   const { exp } = plan.skills; // деструктиризація
+//   console.log(exp);
+//   return exp;
+// }
+
+// showExperience(personalPlanPeter);
+
+// // 2
+// function showProgrammingLangs(plan) {
+//   let str = "";
+//   const { programmingLangs } = plan.skills;
+//   for (let key in programmingLangs) {
+//     str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+//   }
+
+//   return str;
+// }
+
+// showProgrammingLangs(personalPlanPeter);
+
+// Coding Exercise 8 Робота з масивами
+
+// const family = ["Peter", "Ann", "Alex", "Linda"];
+
+// // 1
+// function showFamily(arr) {
+//   let str = "";
+
+//   arr.length === 0 ? (str = "Семья пуста") : (str = "Семья состоит из: ");
+
+//   arr.forEach((member) => {
+//     str += `${member} `;
+//   });
+
+//   return str;
+// }
+
+// showFamily(family);
+
+// // 2
+// const favoriteCities = ["liSBon", "ROME", "miLan", "Dublin"];
+
+// function standardizeStrings(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i].toLowerCase());
+//   }
+// }
+
+// standardizeStrings(favoriteCities);
+
+// Coding Exercise 9 Робота з масивами 2
+
+const someString = "This is some strange string";
+
+function reverse(str) {
+  if (typeof str !== "string") {
+    return "Ошибка!";
+  } else {
+    let result = str.split("").reverse().join("");
+    console.log(result);
+    return result;
+  }
+}
+
+reverse(someString);
+
+// 2
+function availableCurr(arr, missingCurr) {
+  let str = "";
+  arr.length === 0
+    ? (str = "Нет доступных валют")
+    : (str = "Доступные валюты:\n");
+
+  arr.forEach(function (curr, i) {
+    if (curr !== missingCurr) {
+      str += `${curr}\n`;
+    }
+  });
+
+  // Или
+  // for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] === missingCurr) {
+  //         continue;
+  //     }
+  //     str += `${arr[i]}\n`;
+  // }
+
+  return str;
+}
+
+availableCurr([...baseCurrencies, ...additionalCurrencies], "CNY");

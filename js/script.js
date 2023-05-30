@@ -508,7 +508,7 @@
 
 // options.makeTest();
 
-// Дкструктиризація витягнення властивостей з об'єкта в окрему змінну
+// // Дкструктиризація витягнення властивостей з об'єкта в окрему змінну
 // const { border, background } = options.colors;
 // console.log(border);
 
@@ -521,7 +521,7 @@
 
 // console.log(options);
 
-// Перебір Об'єкта for in
+// // Перебір Об'єкта for in
 // for (let key in options) {
 //   console.log(`Властивість ${key} має значення ${options[key]}`);
 // }
