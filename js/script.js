@@ -593,3 +593,112 @@
 // });
 
 // Псевдомасив це об'єк структура якого співпадає із структурою масиву, але в нього не буде методів
+
+// 35 Паредача за посиланням
+
+// let a = 6;
+// let b = a;
+
+// b = b + 4;
+
+// console.log(a);
+// console.log(b);
+
+// const obj = {
+//   a: 5,
+//   b: 1,
+// };
+
+// const copy = obj; // Посилання
+// copy.a = 10;
+
+// console.log(obj);
+// console.log(copy);
+
+// поверхнева копія на об`єкти в середині об'єкта діє передача за посиланням
+// function copy(mainObj) {
+//   let copyObj = {};
+
+//   let key;
+//   for (key in mainObj) {
+//     copyObj[key] = mainObj[key];
+//   }
+//   return copyObj;
+// }
+
+// const numbers = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+//   d: {
+//     x: 7,
+//     y: 8,
+//     z: 9,
+//   },
+// };
+
+// // const newNumbers = copy(numbers);
+
+// // newNumbers.a = 10;
+// // newNumbers.d.x = 33;
+
+// // console.log(numbers);
+// // console.log(newNumbers);
+
+// // Object.assign()
+// const add = { e: 4, f: 5 };
+
+// console.log(Object.assign(numbers, add));
+// console.log(Object.assign({}, add));
+
+// const clone = Object.assign({}, add);
+// clone.g = 7;
+
+// console.log(add);
+// console.log(clone);
+
+// // Копія масиву
+// const oldArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+// const newArr = oldArray; // Передача за посиланням
+// console.log(newArr);
+
+// const newArray = oldArray.slice(); // копія
+// newArray[1] = "Заміна";
+
+// console.log(oldArray);
+// console.log(newArray);
+
+// // ... Spead-оператор
+
+// // в масиві
+
+// const messengers = ["WhatsApp", "Viber", "Telegram"];
+// const socialNetwprk = ["Facebook", "Instagram", "Tiktok"];
+
+// const internet = [...messengers, ...socialNetwprk, "Youtube", "Vimeo"];
+// console.log(internet);
+
+// const num = [7, 8, 9];
+
+// function log(a, b, c) {
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+
+// log(...num);
+
+// const oldArr = ["a", "b", "c"];
+// const newArra = [...oldArr];
+// console.log(newArra);
+
+// // в обєкті
+
+// const q = { a: 1, b: 2, c: 3 };
+
+// const qCopy = { ...q };
+// qCopy.d = 4;
+
+// console.log(q);
+// console.log(qCopy);
