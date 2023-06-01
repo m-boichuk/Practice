@@ -271,44 +271,92 @@
 
 // standardizeStrings(favoriteCities);
 
-// Coding Exercise 9 Робота з масивами 2
+// Coding Exercise 12 Робота з масивами 2
 
-const someString = "This is some strange string";
+// const someString = "This is some strange string";
 
-function reverse(str) {
-  if (typeof str !== "string") {
-    return "Ошибка!";
-  } else {
-    let result = str.split("").reverse().join("");
-    console.log(result);
-    return result;
-  }
-}
+// function reverse(str) {
+//   if (typeof str !== "string") {
+//     return "Ошибка!";
+//   } else {
+//     let result = str.split("").reverse().join("");
+//     console.log(result);
+//     return result;
+//   }
+// }
 
-reverse(someString);
+// reverse(someString);
 
-// 2
-function availableCurr(arr, missingCurr) {
-  let str = "";
-  arr.length === 0
-    ? (str = "Нет доступных валют")
-    : (str = "Доступные валюты:\n");
+// // 2
+// function availableCurr(arr, missingCurr) {
+//   let str = "";
+//   arr.length === 0
+//     ? (str = "Нет доступных валют")
+//     : (str = "Доступные валюты:\n");
 
-  arr.forEach(function (curr, i) {
-    if (curr !== missingCurr) {
-      str += `${curr}\n`;
-    }
-  });
+//   arr.forEach(function (curr, i) {
+//     if (curr !== missingCurr) {
+//       str += `${curr}\n`;
+//     }
+//   });
 
-  // Или
-  // for (let i = 0; i < arr.length; i++) {
-  //     if (arr[i] === missingCurr) {
-  //         continue;
-  //     }
-  //     str += `${arr[i]}\n`;
-  // }
+//   // Или
+//   // for (let i = 0; i < arr.length; i++) {
+//   //     if (arr[i] === missingCurr) {
+//   //         continue;
+//   //     }
+//   //     str += `${arr[i]}\n`;
+//   // }
 
-  return str;
-}
+//   return str;
+// }
 
-availableCurr([...baseCurrencies, ...additionalCurrencies], "CNY");
+// availableCurr([...baseCurrencies, ...additionalCurrencies], "CNY");
+
+// Coding Exercise 13 Робота з масивами 2
+
+// const shoppingMallData = {
+//   shops: [
+//     {
+//       width: 10,
+//       length: 5,
+//     },
+//     {
+//       width: 15,
+//       length: 7,
+//     },
+//     {
+//       width: 20,
+//       length: 5,
+//     },
+//     {
+//       width: 8,
+//       length: 10,
+//     },
+//   ],
+//   height: 5,
+//   moneyPer1m3: 30,
+//   budget: 50000,
+// };
+
+// function isBudgetEnough(data) {
+//   let square = 0;
+//   let volume = 0;
+
+//   data.shops.forEach((shop) => {
+//     square += shop.width * shop.length;
+//   });
+
+//   volume = data.height * square;
+
+//   console.log(square);
+//   console.log(volume);
+
+//   if (data.budget - volume * data.moneyPer1m3 >= 0) {
+//     return "Бюджета достаточно";
+//   } else {
+//     return "Бюджета недостаточно";
+//   }
+// }
+
+// isBudgetEnough(shoppingMallData);
